@@ -1,16 +1,23 @@
-import { Section } from "@/components/section";
-import { PageHeader } from "@/components/page-header";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
+  BarChart3,
+  CheckCircle2,
   Facebook,
+  FileText,
+  Globe,
   Music,
   Search,
-  Globe,
   TrendingUp,
-  BarChart3,
-  FileText,
-  CheckCircle2,
 } from "lucide-react";
+
+import { PageHeader } from "@/components/page-header";
+import { Section } from "@/components/section";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const services = [
   {

@@ -1,16 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
+  BarChart3,
   Facebook,
+  FileText,
+  Globe,
   Music,
   Search,
-  Globe,
   TrendingUp,
-  BarChart3,
-  FileText,
 } from "lucide-react";
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const services = [
   {
@@ -73,16 +80,7 @@ const services = [
       "DSGVO-konform",
     ],
   },
-  {
-    title: "Content/Organic",
-    description: "Strukturierter Content-Plan, Auswertung.",
-    icon: FileText,
-    benefits: [
-      "Content-Strategie",
-      "SEO-Optimierung",
-      "Performance-Tracking",
-    ],
-  },
+  
 ];
 
 export function ServicesGrid() {
@@ -98,19 +96,19 @@ export function ServicesGrid() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Card className="h-full hover:shadow-lg transition-shadow">
+            <Card className="h-full hover:shadow-xl hover:shadow-accent-start/20 transition-all duration-300 hover:scale-105 border-2 border-transparent hover:border-accent-start/20 group">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-tr from-accent-start to-accent-end flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent-start via-accent-end to-accent-light flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent-start/30">
                   <Icon className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
+                <CardTitle className="text-xl text-primary group-hover:text-accent-start transition-colors">{service.title}</CardTitle>
                 <CardDescription>{service.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
                   {service.benefits.map((benefit) => (
-                    <li key={benefit} className="flex items-start text-sm text-gray-600">
-                      <span className="mr-2 text-accent-start">•</span>
+                    <li key={benefit} className="flex items-start text-sm text-gray-600 group-hover:text-gray-700 transition-colors">
+                      <span className="mr-2 text-accent-start font-bold">•</span>
                       {benefit}
                     </li>
                   ))}

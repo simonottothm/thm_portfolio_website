@@ -1,19 +1,18 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 const navigation = [
   { name: "Start", href: "/" },
   { name: "Über mich", href: "/ueber-mich" },
-  { name: "Leistungen", href: "/leistungen" },
   { name: "Projekte", href: "/projekte" },
   { name: "Vita", href: "/vita" },
-  { name: "Buchung", href: "/buchung" },
   { name: "Kontakt", href: "/kontakt" },
 ];
 
@@ -41,8 +40,8 @@ export function Header() {
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-display font-bold text-primary">
+          <Link href="/" className="flex items-center space-x-2 group">
+            <span className="text-xl font-display font-bold bg-gradient-to-r from-primary via-accent-start to-accent-end bg-clip-text text-transparent group-hover:from-accent-start group-hover:via-accent-end group-hover:to-accent-light transition-all duration-300">
               SO | Simon Otto
             </span>
           </Link>
@@ -56,10 +55,10 @@ export function Header() {
                   key={item.name}
                   href={item.href}
                   className={cn(
-                    "px-3 py-2 text-sm font-medium transition-colors rounded-md",
+                    "px-3 py-2 text-sm font-medium transition-all duration-300 rounded-md",
                     isActive
-                      ? "bg-primary text-white"
-                      : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-gradient-to-r from-accent-start to-accent-end text-white shadow-md shadow-accent-start/30"
+                      : "text-gray-700 hover:bg-gradient-to-r hover:from-accent-start/10 hover:to-accent-end/10 hover:text-accent-start"
                   )}
                 >
                   {item.name}
@@ -97,10 +96,10 @@ export function Header() {
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={cn(
-                    "block px-3 py-2 text-base font-medium rounded-md",
+                    "block px-3 py-2 text-base font-medium rounded-md transition-all duration-300",
                     isActive
-                      ? "bg-primary text-white"
-                      : "text-gray-700 hover:bg-gray-100"
+                      ? "bg-gradient-to-r from-accent-start to-accent-end text-white shadow-md shadow-accent-start/30"
+                      : "text-gray-700 hover:bg-gradient-to-r hover:from-accent-start/10 hover:to-accent-end/10 hover:text-accent-start"
                   )}
                 >
                   {item.name}

@@ -1,8 +1,9 @@
-import { Section } from "@/components/section";
+import { MapPin, Mail, Phone } from "lucide-react";
+
+import { MultiStepForm } from "@/components/multi-step-form";
 import { PageHeader } from "@/components/page-header";
-import { ContactForm } from "@/components/contact-form";
+import { Section } from "@/components/section";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Phone, MapPin } from "lucide-react";
 
 const contactInfo = [
   {
@@ -76,7 +77,7 @@ export default function Kontakt() {
             </h2>
             <Card>
               <CardContent className="pt-6">
-                <ContactForm />
+                <MultiStepForm />
               </CardContent>
             </Card>
           </div>

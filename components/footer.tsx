@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Linkedin, Instagram, Github, Music } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 
 const navigation = {
   main: [
@@ -19,7 +19,6 @@ const socialLinks = [
   { name: "LinkedIn", href: "#", icon: Linkedin },
   { name: "Instagram", href: "#", icon: Instagram },
   { name: "GitHub", href: "#", icon: Github },
-  { name: "TikTok", href: "#", icon: Music },
 ];
 
 export function Footer() {

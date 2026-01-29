@@ -30,11 +30,8 @@ export default function Impressum() {
               <p className="text-gray-700">
                 E-Mail: kontakt@simon-otto.de
                 <br />
-                Telefon: +49 641 123456
-                <br />
-                <span className="text-sm text-gray-500">
-                  (Platzhalter – bitte durch echte Kontaktdaten ersetzen)
-                </span>
+                Telefon: +49 123 123456
+                
               </p>
             </div>
 
@@ -49,10 +46,7 @@ export default function Impressum() {
               <h2 className="text-xl font-semibold mb-3">Umsatzsteuer-ID</h2>
               <p className="text-gray-700">
                 DE123456789
-                <br />
-                <span className="text-sm text-gray-500">
-                  (Platzhalter – bitte durch echte USt-ID ersetzen)
-                </span>
+                
               </p>
             </div>
 
@@ -98,11 +92,7 @@ export default function Impressum() {
             <div>
               <h2 className="text-xl font-semibold mb-3">Hosting</h2>
               <p className="text-gray-700 text-sm">
-                Diese Website wird gehostet bei [Hosting-Anbieter einfügen].
-                <br />
-                <span className="text-gray-500">
-                  (Platzhalter – bitte durch echten Hosting-Hinweis ersetzen)
-                </span>
+                Diese Website wird gehostet bei unserem  eigenenHosting-Anbieter.
               </p>
             </div>
           </CardContent>

@@ -1,7 +1,7 @@
-import { Section } from "@/components/section";
-import { PageHeader } from "@/components/page-header";
-import { Timeline } from "@/components/timeline";
 import { DownloadCVButton } from "@/components/download-cv-button";
+import { PageHeader } from "@/components/page-header";
+import { Section } from "@/components/section";
+import { Timeline } from "@/components/timeline";
 import { Card, CardContent } from "@/components/ui/card";
 
 const languages = [

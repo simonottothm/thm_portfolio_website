@@ -1,21 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Award, Briefcase, GraduationCap } from "lucide-react";
 
 const timelineItems = [
   {
     type: "work",
-    title: "Werkstudent Performance Marketing",
-    company: "E-Com Labs GmbH",
-    period: "2025 – heute",
+    title: "Werkstudent Performance Marketing in der Finanz- & Immobilienbranche",
+    company: "LeadConsulting GmbH",
+    period: "2024 – 2026",
     icon: Briefcase,
   },
   {
     type: "education",
     title: "Medieninformatik (THM)",
-    description: "Schwerpunkt Online-Marketing & Webdev",
-    period: "2023 – 2025",
+    description: "Schwerpunkt Web & Mobile Development",
+    period: "2021 – 2025",
     icon: GraduationCap,
   },
   {

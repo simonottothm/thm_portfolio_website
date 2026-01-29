@@ -45,11 +45,8 @@ export default function Datenschutz() {
                 <br />
                 E-Mail: kontakt@simon-otto.de
                 <br />
-                Telefon: +49 641 123456
-                <br />
-                <span className="text-gray-500">
-                  (Platzhalter – bitte durch echte Kontaktdaten ersetzen)
-                </span>
+                Telefon: +49 123 123456
+                
               </p>
             </div>
 
@@ -92,10 +89,7 @@ export default function Datenschutz() {
                 (Hoster). Die dabei erfassten Logfiles (Zugriffszeiten,
                 IP-Adressen, etc.) werden automatisch gelöscht, sobald sie für
                 die Bereitstellung der Website nicht mehr erforderlich sind.
-                <br />
-                <span className="text-gray-500">
-                  (Platzhalter – bitte durch echten Hosting-Hinweis ersetzen)
-                </span>
+                
               </p>
             </div>
 
@@ -172,10 +166,7 @@ export default function Datenschutz() {
                 <p className="mt-3">
                   Bei Fragen zur Datenverarbeitung können Sie sich jederzeit an
                   mich wenden: kontakt@simon-otto.de
-                  <br />
-                  <span className="text-gray-500">
-                    (Platzhalter – bitte durch echte E-Mail ersetzen)
-                  </span>
+                  
                 </p>
               </div>
             </div>
@@ -204,10 +195,7 @@ export default function Datenschutz() {
                 E-Mail-Dienste) personenbezogene Daten in meinem Auftrag
                 verarbeiten, erfolgt dies auf Grundlage von
                 Auftragsverarbeitungsverträgen gemäß Art. 28 DSGVO.
-                <br />
-                <span className="text-gray-500">
-                  (Platzhalter – bitte durch echte Informationen ersetzen)
-                </span>
+                
               </p>
             </div>
 

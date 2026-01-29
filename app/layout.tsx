@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
-import "./globals.css";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+
 import { BackToTop } from "@/components/back-to-top";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import { Toaster } from "@/components/ui/toaster";
+import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
