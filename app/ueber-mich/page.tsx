@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { Camera } from "lucide-react";
 
 import { PageHeader } from "@/components/page-header";
 import { Section } from "@/components/section";
@@ -50,17 +50,17 @@ export default function UeberMich() {
             transition={{ duration: 0.6 }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12"
           >
-            <Card className="overflow-hidden border-2 border-dashed border-gray-300 hover:border-accent-start/50 transition-colors">
+            <Card className="overflow-hidden border-2 border-accent-start/20 hover:border-accent-start/50 transition-colors">
               <CardContent className="p-0">
-                <div className="relative w-full h-[400px] bg-gradient-to-br from-blue-50/50 via-white to-blue-50/50 flex items-center justify-center group">
-                  <div className="text-center">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-accent-start/20 to-accent-end/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                      <Camera className="h-10 w-10 text-accent-start" />
-                    </div>
-                    <p className="text-gray-600 text-sm font-medium">Bildplatzhalter</p>
-                    <p className="text-gray-400 text-xs mt-2">Profilbild hier einfügen</p>
-                    <p className="text-gray-300 text-xs mt-1">(z.B. /public/assets/about-me.jpg)</p>
-                  </div>
+                <div className="relative w-full h-[400px]">
+                  <Image
+                    src="/assets/SO_5.jpeg"
+                    alt="Simon Otto"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
+                  />
                 </div>
               </CardContent>
             </Card>
@@ -102,7 +102,7 @@ export default function UeberMich() {
               Skills & Kenntnisse
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Meine Expertise in verschiedenen Bereichen – bewertet auf einer Skala von 0-10
+              Meine Expertise in verschiedenen Bereichen
             </p>
           </motion.div>
 
@@ -160,52 +160,6 @@ export default function UeberMich() {
         </div>
       </Section>
 
-      {/* Image Gallery Placeholder Section */}
-      <Section className="bg-gradient-to-b from-white via-blue-50/30 to-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="mb-8 text-center"
-          >
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
-              Einblicke
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Bilder aus meinem Arbeitsalltag und Projekten
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[1, 2, 3].map((index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Card className="overflow-hidden border-2 border-dashed border-gray-300 hover:border-accent-start/50 transition-colors group">
-                  <CardContent className="p-0">
-                    <div className="relative w-full h-[300px] bg-gradient-to-br from-blue-50/50 via-white to-blue-50/50 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent-start/20 to-accent-end/20 flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
-                          <Camera className="h-8 w-8 text-accent-start" />
-                        </div>
-                        <p className="text-gray-600 text-sm font-medium">Bild {index}</p>
-                        <p className="text-gray-400 text-xs mt-1">Platzhalter</p>
-                        <p className="text-gray-300 text-xs mt-1">(z.B. /public/assets/gallery-{index}.jpg)</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </Section>
     </>
   );
 }
