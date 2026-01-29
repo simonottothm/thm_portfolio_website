@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
   BarChart3,
   Facebook,
-  FileText,
   Globe,
   Music,
   Search,

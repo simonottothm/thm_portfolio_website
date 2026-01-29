@@ -152,7 +152,7 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="flex flex-wrap justify-center lg:justify-start gap-3"
             >
-              {badges.map((badge, index) => (
+              {badges.map((badge) => (
                 <Badge
                   key={badge}
                   variant="secondary"

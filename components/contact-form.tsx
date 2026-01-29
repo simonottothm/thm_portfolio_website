@@ -38,7 +38,7 @@ export function ContactForm() {
     },
   });
 
-  const onSubmit = async (data: FormValues) => {
+  const onSubmit = async (_data: FormValues) => {
     // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 500));
     
